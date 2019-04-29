@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title>Server stream sample</title>
+  </head>
+  <body>
+    <!-- These allow to stream content directly from web (and not using our local server) using HTML5 tags -->
+      <!-- <video controls muted="muted" autoplay>
+           <source src="Clip_480_5sec_6mbps_h264.mp4" type="video/mp4"/>
+           <source src="movie.webm" type="video/webm"/>
+           <source src="movie.ogg" type="video/ogg"/>
+             fallback
+             Your browser does not support the <code>video</code> element.
+          </video> -->
+    
+    <video id="videoPlayer" controls muted="muted" autoplay> 
+      <source src="http://localhost:3000/movie" type="video/mp4">
+    </video>
+  </body>
+</html>
